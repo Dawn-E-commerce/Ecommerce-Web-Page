@@ -1,14 +1,16 @@
 // import { useState } from 'react'
-import './App.css'
+import './App.css';
+import Header from './components/Header/Header.tsx';
+import Home from './pages/Home.tsx';
+import Footer from './components/Footer/Footer.tsx';
 
-function App() {
-
-
+const App = () => {
   return (
     <>
-    <h1 className="text-red-800 font-bold text-3xl">Hello World</h1>
+      <Header />
+      <Home />
+      <Footer />
     </>
-  )
-}
-
-export default App
+  );
+};
+export default App;
