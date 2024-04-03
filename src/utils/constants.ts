@@ -3,6 +3,9 @@ import facebook from '../assets/images/facebook.svg';
 import twitter from '../assets/images/twitter.svg';
 import instagram from '../assets/images/instagram.svg';
 import linkedin from '../assets/images/linkedin.svg';
+import qrCode from '../assets/images/Qr Code.png';
+import googlePlay from '../assets/images/GooglePlay.png';
+import appStore from '../assets/images/AppStore.png';
 export const navLinks = [
   { id: 'home', title: 'Home' },
   { id: 'contact', title: 'Contact' },
@@ -14,6 +17,17 @@ export const socialMedia = Object.freeze([
   { id: 'social-media-2', icon: twitter, link: 'https://twitter.com' },
   { id: 'social-media-3', icon: instagram, link: 'https://www.instagram.com/' },
   { id: 'social-media-4', icon: linkedin, link: 'https://www.linkedin.com' },
+]);
+export const downloads = Object.freeze([
+  {
+    image: qrCode,
+  },
+  {
+    image: googlePlay,
+  },
+  {
+    image: appStore,
+  },
 ]);
 export const footerLink = Object.freeze([
   {
