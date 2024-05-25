@@ -8,22 +8,22 @@ const Region = () => {
           Suppliers by region
         </h1>
         <div className="row pb-12 pt-6 grid grid-cols-5 gap-y-5 gap-x-2">
-          {REGION.map((item, index) => (
-            <>
-              <div key={index} className="col">
-                <div className="region__items">
-                  <div className="region__card flex flex-row items-center gap-3">
-                    <div className="region-card__img min-w-max">
-                      <img src={item.icon} alt="" className="" />
-                    </div>
-                    <div className="region-card__title flex flex-col">
-                      <h1>{item.name}</h1>
-                      <p className="text-sm text-gray-400">{item.subtitle}</p>
-                    </div>
+          {REGION.map((item) => (
+
+            <div key={item.id} className="col">
+              <div className="region__items">
+                <div className="region__card flex flex-row items-center gap-3">
+                  <div className="region-card__img min-w-max">
+                    <img src={item.icon} alt="" className="" />
+                  </div>
+                  <div className="region-card__title flex flex-col">
+                    <h1>{item.name}</h1>
+                    <p className="text-sm text-gray-400">{item.subtitle}</p>
                   </div>
                 </div>
               </div>
-            </>
+            </div>
+
           ))}
 
 

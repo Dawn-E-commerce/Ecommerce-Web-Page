@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { logo } from "../../utils/assets"
 import { HEADER_UTILS } from "../../utils/constants"
 const TopBar = () => {
@@ -20,10 +21,10 @@ const TopBar = () => {
           <div className="col">
             <div className="top-bar__links flex flex-row gap-4">
               {HEADER_UTILS.map((index) => (
-                <div className="top-bar-links__items">
-                  <a href="#" className="flex flex-col items-center text-gray-500">
+                <div key={index.id} className="top-bar-links__items">
+                  <Link to={`${index.path}`} className="flex flex-col items-center text-gray-500">
                     {index.icon && <index.icon className="size-[25px]" />}
-                    {index.title}</a>
+                    {index.title}</Link>
                 </div>
               ))}
 

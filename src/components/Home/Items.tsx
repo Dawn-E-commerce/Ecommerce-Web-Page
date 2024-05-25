@@ -1,10 +1,10 @@
-import { ITEM_PRODUCT_2 } from "../../utils/constants";
+import { ITEM_PRODUCT } from "../../utils/constants";
 const Items = () => {
   return (
     <>
 
-      {ITEM_PRODUCT_2.map(({ id, banner, product }) => (
-        <section className="items bg-gray-100 py-5">
+      {ITEM_PRODUCT.map(({ id, banner, product }) => (
+        <section className="items bg-gray-100 py-5" key={id}>
           <div className="container max-w-6xl mx-auto rounded-lg border-2 border-gray-300 bg-white">
             <div key={id} className="row flex flex-row">
 

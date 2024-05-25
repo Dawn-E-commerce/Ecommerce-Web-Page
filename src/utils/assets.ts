@@ -7,6 +7,7 @@ import service1 from '../assets/images/banner/bannerService1.png';
 import service2 from '../assets/images/banner/bannerService2.png';
 import service3 from '../assets/images/banner/bannerService3.png';
 import service4 from '../assets/images/banner/bannerService4.png';
+import bannerAuthen from '../assets/images/banner/bannerAuthen.png';
 //! Country
 import UAE from '../assets/images/country/UAE.svg';
 import Denmark from '../assets/images/country/Denmark.svg';
@@ -43,6 +44,7 @@ export const Banner = {
   service2,
   service3,
   service4,
+  bannerAuthen,
 };
 export const Country = {
   UAE,

@@ -28,13 +28,13 @@ const Info = () => {
 
           {FOOTER_LINK.map(({ id, title, links }) =>
           (
-            <div className="col">
+            <div key={id} className="col">
               <div className="footer-info__cards">
-                <ul key={id} className="[&>*:first-child]:text-black [&>*:first-child]:font-medium [&>*:first-child]:pb-2 [&>*:not(:first-child)]:mb-1 text-gray-300">
+                <ul className="[&>*:first-child]:text-black [&>*:first-child]:font-medium [&>*:first-child]:pb-2 [&>*:not(:first-child)]:mb-1 text-gray-300">
                   <li>{title}</li>
-                  {links.map(({ name, link }) => (
+                  {links.map(({ id, name, link }) => (
 
-                    <a href={link}>
+                    <a href={link} key={id}>
                       <li>{name}</li>
                     </a>
                   ))}

@@ -44,10 +44,10 @@ const DEAL_PRODUCTS = Object.freeze([
   { id: 5, image: Product.SmartWatch, title: 'Canon camreras', sale: '25' },
 ]);
 const HEADER_UTILS = Object.freeze([
-  { icon: FaUserAlt, title: 'Profile' },
-  { icon: MdOutlineMessage, title: 'Message' },
-  { icon: FaHeart, title: 'Orders' },
-  { icon: IoMdCart, title: 'My Cart' },
+  { id: 1, icon: FaUserAlt, title: 'Profile', path: '/signup' },
+  { id: 2, icon: MdOutlineMessage, title: 'Message' },
+  { id: 3, icon: FaHeart, title: 'Orders' },
+  { id: 4, icon: IoMdCart, title: 'My Cart' },
 ]);
 const SOCIAL_MEDIA = Object.freeze([
   { id: 'social-media-1', icon: FaFacebookF, link: 'https://www.facebook.com' },
@@ -65,20 +65,7 @@ const SOCIAL_MEDIA = Object.freeze([
   { id: 'social-media-5', icon: FaYoutube, link: 'https://www.youtube.com' },
 ]);
 
-const ITEM_PRODUCT = Object.freeze({
-  banner: { banner: Banner.bannerItem1, title: 'Home and outdoor' },
-  product: [
-    { id: 1, name: 'Soft chairs', price: 19, image: Product.Blender },
-    { id: 2, name: 'Soft chairs', price: 19, image: Product.Blender },
-    { id: 3, name: 'Kitchen dishes', price: 19, image: Product.Blender },
-    { id: 4, name: 'Smart watches', price: 19, image: Product.Blender },
-    { id: 5, name: 'Kitchen mixer', price: 19, image: Product.Blender },
-    { id: 6, name: 'Blenders', price: 19, image: Product.Blender },
-    { id: 7, name: 'Home appliance', price: 19, image: Product.Blender },
-    { id: 8, name: 'Coffee maker', price: 19, image: Product.Blender },
-  ],
-});
-const ITEM_PRODUCT_2 = Object.freeze([
+const ITEM_PRODUCT = Object.freeze([
   {
     id: 1,
     banner: { banner: Banner.bannerItem1, title: 'Home and outdoor' },
@@ -241,16 +228,36 @@ const SERVICES = Object.freeze([
 ]);
 
 const REGION = Object.freeze([
-  { name: 'Arabic Emirates', subtitle: 'shopname.ae', icon: Country.UAE },
-  { name: 'Australia', subtitle: 'shopname.ae', icon: Country.Australia },
-  { name: 'United States', subtitle: 'shopname.ae', icon: Country.UAE },
-  { name: 'Russia', subtitle: 'shopname.ru', icon: Country.Russia },
-  { name: 'Italy', subtitle: 'shopname.it', icon: Country.Italy },
-  { name: 'Denmark', subtitle: 'denmark.com.dk', icon: Country.Denmark },
-  { name: 'France', subtitle: 'shopname.com.fr', icon: Country.France },
-  { name: 'Arabic Emirates', subtitle: 'shopname.ae', icon: Country.UAE },
-  { name: 'China', subtitle: 'shopname.ae', icon: Country.China },
-  { name: 'Great Britain', subtitle: 'shopname.co.uk', icon: Country.England },
+  {
+    id: 1,
+    name: 'Arabic Emirates',
+    subtitle: 'shopname.ae',
+    icon: Country.UAE,
+  },
+  {
+    id: 2,
+    name: 'Australia',
+    subtitle: 'shopname.ae',
+    icon: Country.Australia,
+  },
+  { id: 3, name: 'United States', subtitle: 'shopname.ae', icon: Country.UAE },
+  { id: 4, name: 'Russia', subtitle: 'shopname.ru', icon: Country.Russia },
+  { id: 5, name: 'Italy', subtitle: 'shopname.it', icon: Country.Italy },
+  { id: 6, name: 'Denmark', subtitle: 'denmark.com.dk', icon: Country.Denmark },
+  { id: 7, name: 'France', subtitle: 'shopname.com.fr', icon: Country.France },
+  {
+    id: 8,
+    name: 'Arabic Emirates',
+    subtitle: 'shopname.ae',
+    icon: Country.UAE,
+  },
+  { id: 9, name: 'China', subtitle: 'shopname.ae', icon: Country.China },
+  {
+    id: 10,
+    name: 'Great Britain',
+    subtitle: 'shopname.co.uk',
+    icon: Country.England,
+  },
 ]);
 
 const DOWNLOADS = Object.freeze([
@@ -269,88 +276,40 @@ const FOOTER_LINK = Object.freeze([
     id: 1,
     title: 'About',
     links: [
-      {
-        name: 'About Us',
-        link: '',
-      },
-      {
-        name: 'Find store',
-        link: '',
-      },
-      {
-        name: 'Categories',
-        link: '',
-      },
-      {
-        name: 'Blogs',
-        link: '',
-      },
+      { id: 1, name: 'About Us', link: '' },
+      { id: 2, name: 'Find store', link: '' },
+      { id: 3, name: 'Categories', link: '' },
+      { id: 4, name: 'Blogs', link: '' },
     ],
   },
   {
     id: 2,
     title: 'Partnership',
     links: [
-      {
-        name: 'About Us',
-        link: '',
-      },
-      {
-        name: 'Find store',
-        link: '',
-      },
-      {
-        name: 'Categories',
-        link: '',
-      },
-      {
-        name: 'Blogs',
-        link: '',
-      },
+      { id: 1, name: 'About Us', link: '' },
+      { id: 2, name: 'Find store', link: '' },
+      { id: 3, name: 'Categories', link: '' },
+      { id: 4, name: 'Blogs', link: '' },
     ],
   },
   {
     id: 3,
     title: 'Information',
     links: [
-      {
-        name: 'Help Center',
-        link: '',
-      },
-      {
-        name: 'Money Refund',
-        link: '',
-      },
-      {
-        name: 'Shipping',
-        link: '',
-      },
-      {
-        name: 'Contact us',
-        link: '',
-      },
+      { id: 1, name: 'Help Center', link: '' },
+      { id: 2, name: 'Money Refund', link: '' },
+      { id: 3, name: 'Shipping', link: '' },
+      { id: 4, name: 'Contact us', link: '' },
     ],
   },
   {
     id: 4,
     title: 'For users',
     links: [
-      {
-        name: 'Login',
-        link: '',
-      },
-      {
-        name: 'Register',
-        link: '',
-      },
-      {
-        name: 'Settings',
-        link: '',
-      },
-      {
-        name: 'My Orders',
-        link: '',
-      },
+      { id: 1, name: 'Login', link: '' },
+      { id: 2, name: 'Register', link: '' },
+      { id: 3, name: 'Settings', link: '' },
+      { id: 4, name: 'My Orders', link: '' },
     ],
   },
 ]);
@@ -359,11 +318,10 @@ export {
   CATEGORY_NAV,
   DEAL_PRODUCTS,
   DOWNLOADS,
-  ITEM_PRODUCT,
-  ITEM_PRODUCT_2,
   FOOTER_LINK,
   HEADER_NAV,
   HEADER_UTILS,
+  ITEM_PRODUCT,
   RECOMMENDED_PRODUCT,
   REGION,
   SERVICES,

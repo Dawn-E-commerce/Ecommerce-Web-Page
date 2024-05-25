@@ -1,12 +1,17 @@
-// import { Product } from "../interfaces/Product";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
-// type Props = {
-//   product: Product[];
-// };
 const Products = () => {
-  // console.log(product);
 
-  return <div>Product</div>;
+
+  return (
+    <>
+      <Header />
+      <h1>Products</h1>
+      <Footer />
+    </>
+
+  );
 };
 
 export default Products;
