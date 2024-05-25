@@ -1,7 +1,7 @@
 ### DEMO URL: https://web.dawn.id.vn/
 
 ### QR CODE:
-https://github.com/DawnBreaker207/Ecommerce-Web-Page/assets/126256917/ac788955-4cdc-43b0-9949-60a48ca34608
+![image](https://github.com/DawnBreaker207/Ecommerce-Web-Page/assets/126256917/96a71e7f-7dfe-4207-b993-7b553b49ec84)
 
 
 - Container: wrap layout with margin
